@@ -1,0 +1,25 @@
+{
+  "SchemaVersion": 1,
+  "Name": "AzureSphereSampleDevice",
+  "ComponentId": "819255ff-8640-41fd-aea7-f85d34c491d5",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ "--ConnectionType", "DPS", "--ScopeID", "<YOUR-SCOPE-ID>" ],
+  "Capabilities": {
+    "AllowedConnections": [
+      "global.azure-devices-provisioning.net",
+      "<YOUR-IOT-HUB-0>.azure-devices.net",
+      "<YOUR-IOT-HUB-1>.azure-devices.net",
+      "<YOUR-IOT-HUB-2>.azure-devices.net",
+      "<YOUR-IOT-HUB-3>.azure-devices.net",
+      "<YOUR-IOT-HUB-4>.azure-devices.net",
+      "<YOUR-IOT-HUB-5>.azure-devices.net",
+      "<YOUR-IOT-HUB-6>.azure-devices.net",
+      "<YOUR-IOT-HUB-7>.azure-devices.net",
+      "<YOUR-IOT-HUB-8>.azure-devices.net",
+      "<YOUR-IOT-HUB-9>.azure-devices.net"
+    ],
+    "Gpio": [ "$SAMPLE_BUTTON_1", "$SAMPLE_LED" ],
+    "DeviceAuthentication": "<YOUR-AZURE-SPHERE-TENANT-ID>"
+  },
+  "ApplicationType": "Default"
+}

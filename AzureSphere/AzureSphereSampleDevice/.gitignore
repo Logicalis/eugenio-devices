@@ -1,0 +1,6 @@
+# Ignore output directories
+/out/
+/install/
+
+# Ignore backup files
+*.bkp
